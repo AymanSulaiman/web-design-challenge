@@ -2,91 +2,111 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Bootstrap Visualisation Dashboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootstrap Visualisation Dashboard</title>
 
-<!--CSS stuff-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="style.css">
-
+  <!--CSS stuff-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-light">
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
-    <a class="navbar-brand" href="#">
-        <div class="p-3 mb-2 bg-info text-white">Lattitude</div>
-    </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Lattitude</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-       <ul class="nav justify-content-end">
-        
-        <li class="nav-item dropdown active">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Plots
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">City Latitude vs. Max Temperature</a>
-            <a class="dropdown-item" href="#">City Latitude vs. Humidity</a>
-            <a class="dropdown-item" href="#">City Latitude vs. Cloudiness</a>
-            <a class="dropdown-item" href="#">City Latitude vs. Wind Speed</a>
-          </div>
-        </li>
-        
-        <li class="nav-item">
-            <a class="nav-link" href="#">Comparison</a>
-        </li>
-        
-        <li class="nav-item">
-            <a class="nav-link" href="#">Data</a>
-        </li>
-      </ul>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Fig1</a>
+          <a class="dropdown-item" href="#">Fig2</a>
+          <a class="dropdown-item" href="#">Fig3</a>
+          <a class="dropdown-item" href="#">Fig4</a>
+        </div>
+      </li>
       
-    </div>
+    </ul>
+    
+  </div>
 </nav>
-<!--Navbar-->
+<!--End of Navbar-->
 
-<!--Container start-->
+<!--Container-->
 <div class="container-fluid">
+  <!-- <div class="row">
+    
+    <div class="col-md-4 bg-white">
+      <div class="wrapper">
+        <h1>City Lattitude vs. X</h1>
+        <hr>
+        <img class="img-summery" src="Fig1.png" alt="City Latitude vs. Max Temperature" height="100" width="100">
+          <p class="summery">
+            The purpose of this project was to analyse how weather changes as you get closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
+            <br><br>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather against the latitude. Factors that we looked at
+            included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualisations created as part of the analysis,
+            as well as the explanations and descriptions of any trends and correlations witnessed.
+          </p>
+      </div>    
+    </div>
+    
+    <div class="col-md-4 offset-md-4 bg-white">
+      .col-6 .col-md-4
+    </div> -->
+
   <div class="row">
-    <div class="col-lg-7 col-md-12">
-      <div class="description-content">
-          <div class="row">
-            <div class="col-lg-7 col-md-12">
-              <div class="description-content">
-                <h1 class="Summery">Summery: Lattitude VS. X</h1>
-                <hr>
-                <img class="summery-image" src="Fig1.png" alt="City Latitude vs. Max Temperature" height="100" width="100">
-                <p>
-                  The purpose of this project was to analyse how weather changes as you get closer to the equator.
-                  To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
-                  <br><br>
-                  After assembling the dataset, we used Matplotlib to plot various aspects of the weather against the latitude. Factors that we looked at
-                  included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualisations created as part of the analysis,
-                  as well as the explanations and descriptions of any trends and correlations witnessed.
-                </p>
-              </div>
-            </div>
-          </div> 
+
+    <div class="col-sm-6 bg-white">
+      <div class="wrapper">
+        <h1>City Lattitude vs. X</h1>
+        <hr>
+        <img class="img-summery" src="Fig1.png" alt="City Latitude vs. Max Temperature">
+          <p class="summery">
+            The purpose of this project was to analyse how weather changes as you get closer to the equator.
+            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
+            <br><br>
+            After assembling the dataset, we used Matplotlib to plot various aspects of the weather against the latitude. Factors that we looked at
+            included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and the visualisations created as part of the analysis,
+            as well as the explanations and descriptions of any trends and correlations witnessed.
+          </p>
+      </div> 
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-5 bg-white">
+      <div class="wrapper">
+        
+        <h2>Visualisations</h2>
+        <hr>
+        <img class="img-others" src="Fig1.png" alt="">
+        <img class="img-others" src="Fig2.png" alt="">
+        <img class="img-others" src="Fig3.png" alt="">
+        <img class="img-others" src="Fig4.png" alt="">
+        
       </div>
     </div>
-       
-    <div class="col-4">
-      <h2>Visualisations</h2>
-      <hr>
-    </div>
-        
   </div>
+
 </div>
 
 
-<!--Container end-->
 
-<!--Scripts-->
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
