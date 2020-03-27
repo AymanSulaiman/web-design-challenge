@@ -1,24 +1,22 @@
-/* Start of Navigation bar */
-
 .navbar{
-    max-height: 50px;
-    background-color: #cacccb;
-    font-size: 15px;
+    background-color: white;
 }
 
-.navigation .navbar-brand{
-	color: white; 
-	margin-left: 50px; 
-	padding: 50px; 
-	font-weight: bold; 
-	background-color: #0bada6;
+a.navbar-brand {
+    padding: 10px; 
+    background-color: #0bada6;
+    color: green;
 	font-family: "Times New Roman";
 
 } 
-/* End of Navigation bar */
+
+#pokemon{
+    color: white;
+}
+
 
 body{
-    color:grey;
+    background-color:#EDEDED;
 }
 
 .wrapper {
@@ -38,7 +36,7 @@ img.img-summery{
     float: left;
     width: 66.67%;
     height: 66.67%;
-    margin: 20px 20px 20px 20px;
+    margin: 0px 0px 0px 0px;
 }
 
 img.img-others{
