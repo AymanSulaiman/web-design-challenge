@@ -55,6 +55,12 @@ h2.data{
 	font-family: "Times New Roman";
 }
 
+h3.data{
+    color: #0bada6;
+    font-family: "Times New Roman";
+    text-align:center
+}
+
 table{
     text-align: center;
     width:100%; 
@@ -122,9 +128,7 @@ tr {
 	}
 	
 	td:before { 
-		/* Now like a table header */
 		position: absolute;
-		/* Top/left values mimic padding */
 		top: 6px;
 		left: 6px;
 		width: 45%; 
@@ -132,9 +136,7 @@ tr {
 		white-space: nowrap;
 	}
 	
-	/*
-	Label the data
-	*/
+
 	td:nth-of-type(1):before { content: "City_ID"; }
 	td:nth-of-type(2):before { content: "City"; }
 	td:nth-of-type(3):before { content: "Cloudiness"; }
@@ -152,18 +154,13 @@ img.img-data{
     height: 50%;
 }
 
-@media (max-width: 600px){
-    img.img-data{
-        
-    }
-}
 
 @media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
-  } */
+  } 
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 800px) {
@@ -173,17 +170,41 @@ img.img-data{
     }
   }
 
-  .card img {
+  .card a img {
     height: auto;
+    width: 100%;
+    vertical-align:center;
   }
-  
+
   .cards {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-gap: 1rem;
+    vertical-align:center;
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 600px) {
     .cards { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .card-single img {
+    height: 100%;
+    width: 100%;
+    vertical-align:center;
+  }
+
+  .cards-single {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    vertical-align:center;
   }
